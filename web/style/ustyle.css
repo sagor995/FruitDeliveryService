@@ -1,0 +1,291 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+
+
+.main_wrapper{
+width: auto;
+overflow-y: hidden;
+margin: auto;
+height: auto;
+
+background-image: url("../img/bg2.jpg");
+  /* Half height */
+
+  /* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+    
+.header_wrapper{
+background: #fff;
+border-bottom: 2px solid black;
+border-left: 2px solid black;
+border-right: 2px solid black;
+width: 1000px;
+height: 150px;
+position: relative;
+margin: auto;
+}
+
+#header_logo{
+        max-height: 98%;
+        max-width: 98%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+}
+#header_banner{float: right;
+	height: 149px;
+	width:1000px;
+}
+
+
+#shopping_cart{
+		width: 1000px;
+		height: 40px;
+		background: #F88A00;
+		color: white;
+	margin: auto;
+	}
+
+/*Menu Style starts*/
+#form{
+
+	float: right;
+        padding: 2px;
+	line-height: 40px;
+}
+.menubar{
+	height: 50px;
+	width: 1000px;
+	background: green;
+	color: white;
+	margin: auto;
+}
+#menu{
+	margin: 0;
+	padding: 0;
+	line-height: 45px;
+	float: right;
+}
+
+#menu li{
+	list-style: none; /*bullets will be removed*/
+		display: inline;
+}
+
+#menu a{
+
+	text-decoration: none; /*underline will be removed*/
+	color: white;
+	padding: 5px;
+	margin: 5px;
+	font-size: 17px;
+	font-family: sans-serif;
+	font-style: oblique;
+}
+
+#menu a:hover{Color: orange; }
+/*Menu Style Ends*/
+
+.type_wrapper{
+width: 1000px;
+height: 305px;
+border: 2px outset black;
+margin: auto;
+background: #FFFFFF;
+}
+
+#slide_area{
+border-right:2px solid black;
+border-left: 2px solid black;
+width: 845px;
+height: 300px;
+float: left;
+background: orange;
+}
+#Typebar{
+width: 150px;
+overflow-y: hidden;
+border-left: 1px groove white;
+border-top: 6px solid orange;
+background-color: #000;
+float: right;
+}
+
+#brnds{
+	line-height: 10px;
+}
+
+#brnds li{
+	list-style: none; /*bullets will be removed*/
+}
+
+#brnds a{
+	font-style: oblique;
+	text-decoration: none; /*underline will be removed*/
+	color: #ffa500;
+	padding: 8px;
+	margin: 5px;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+#brnds a:hover{Color: white; }
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #000;
+    color:#fff;
+    float: left;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 14px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #orange;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #000000;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 5px 5px;
+    border: 1px groove #ccc;
+    border-top: none;
+}
+
+#news_feed_area{
+
+width: 1000px;
+margin: auto;
+}
+#banner_area{
+border-top: 6px solid orange;
+border-right:2px solid black;
+border-left: 2px solid black;
+width: 1000px;
+background: white;
+height: 200px;
+margin: auto;
+}
+
+#content_area{
+	border-top: 5px solid orange;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 5px solid orange;
+width: 1000px;
+overflow-y: hidden;
+margin: auto;
+background:#fff;
+}
+
+
+#single_product_homepage{
+margin-top: 10px;
+float: left;
+margin-left: 30px;
+margin-bottom: 30px;
+padding: 5px;
+background: white;
+border-radius: 5px;
+border: 2px outset orange;
+}
+
+#single_product_homepage img{
+
+	border: 2px solid lightgreen;
+}
+
+#homePageTitle{
+	color:white;
+        font-size: 12px;
+	height: 20px;
+	width: 200px;
+	border: 1px inset;
+	background: green;
+	margin-bottom: 2px;
+}
+
+#price{
+     margin: auto;
+        font-size: 15px;
+	background: orange;
+	color: #fff;
+	height: 20px;
+	width: 200px;
+	border: 1px ridge;
+	font-family: Geneva;
+}
+#des{
+   
+        font-size: 12px;
+	color: #fff;
+	height: 20px;
+	width: 200px;
+	border: 1px ridge;
+	font-family: Geneva;
+}
+
+
+.footer_wrapper{
+width: 1000px;
+height: 100px;
+background: #000000;
+margin: auto;
+clear: both;
+}
+#cpy_text{
+	line-height: 100px;
+	color: white;
+	font-family: sans-serif;
+}
+#contact_us{
+	text-decoration: none;
+	font-size: 16px;
+	font-family: sans-serif;
+	color: white;
+	font-style: oblique;
+}
+#contact_us:hover{
+	color: green;
+}
