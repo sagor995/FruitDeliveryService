@@ -127,61 +127,7 @@ ResultSet resultSet = null;
                                   </nav>    
             </div>
 
-            <div class="type_wrapper">
-                    <!--Sidebar starts -->
-                    <div id="Typebar">
-                                        <center> <label class="badge badge-dark">Types</label></center>
-                                    <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/fruit_ds" user="root" password="" />
-                                    <sql:query var="rs1" dataSource="${db}">select * from types;</sql:query>
-                                    
-                                        <ul class="list-group">
-                                            <c:forEach items="${rs1.rows}" var="row1">
-                                                <a href="index_type.jsp?type_sresult=${row1.type_title}" class="list-group-item list-group-item-action">
-                                                    ${row1.type_title}
-                                                    <span class="badge badge-success badge-pill">0</span>
-                                                 </a>
-                                             </c:forEach>
-                                        </ul>
-                                   
-                    </div>
-                    <!--Sidebar ends -->
-                    <div id="slide_area">
-                        
-                        <img class="mySlides w3-animate-fading" src="slide_img/<%=resultSet.getString("slide_image_1") %>" height="99.9%" style="width:99.9%">
-                        <img class="mySlides w3-animate-fading" src="slide_img/<%=resultSet.getString("slide_image_2") %>" height="99.9%" style="width:99.9%">
-                         <img class="mySlides w3-animate-fading" src="slide_img/<%=resultSet.getString("slide_image_3") %>" height="99.9%" style="width:99.9%">
-                         <img class="mySlides w3-animate-fading" src="slide_img/<%=resultSet.getString("slide_image_4") %>" height="99.9%" style="width:99.9%">
-                         <img class="mySlides w3-animate-fading" src="slide_img/<%=resultSet.getString("slide_image_5") %>" height="99.9%" style="width:99.9%">
-                         <img class="mySlides w3-animate-fading" src="slide_img/<%=resultSet.getString("slide_image_6") %>" height="99.9%" style="width:99.9%;">
-                                    
-                                    <script>
-                                            var myIndex = 0;
-                                            carousel();
-
-                                            function carousel() {
-                                                var i;
-                                                var x = document.getElementsByClassName("mySlides");
-                                                for (i = 0; i < x.length; i++) {
-                                                   x[i].style.display = "none";  
-                                                }
-                                                myIndex++;
-                                                if (myIndex > x.length) {myIndex = 1}    
-                                                x[myIndex-1].style.display = "block";  
-                                                setTimeout(carousel, 4000);    
-                                            }
-                                    </script>
-                    </div>
-            </div>
-            
-            <div id="news_feed_area" style="height: 40px;background: black;color: white;">
-                            <h5 style="padding-top: 5px; "><marquee behavior='scroll' direction='left'>
-        <%=resultSet.getString("news_feed") %>
-                                </marquee></h5>
-
-            </div>
-            <div id="banner_area" >
-                <img src="img/<%=resultSet.getString("ads_center_image") %>" width="995px" height="193px"/>
-            </div>
+        
             
             <%
         }
@@ -189,14 +135,24 @@ ResultSet resultSet = null;
         } catch (Exception e) {
         e.printStackTrace();
         }
-        %>                    
+        %>
+        
+        <%
+            String value2 = request.getParameter("sresult");  
+        %>
+        
+        
                                 
                                 
             <div id="content_area">
                             <div id="products_box">
+<!--                                    <?php getProducts(); ?>
+                                    <?php getBrandProducts(); ?>	
+                                    <?php getCategoryProducts(); ?>-->
 
-
-                                    <sql:query var="rs" dataSource="${db}">select * from products limit 9;</sql:query>
+                                     <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/fruit_ds" user="root" password="" />
+        
+                                    <sql:query var="rs" dataSource="${db}">select * from products where product_title rlike '<%=value2%>' OR product_type IN (SELECT type_id FROM types WHERE type_title rlike '<%=value2%>');</sql:query>
                                     <c:forEach items="${rs.rows}" var="row">
                                         
                                         
@@ -212,6 +168,7 @@ ResultSet resultSet = null;
                                             <a href='index.php?add_cart=${row.product_id}'><button class='btn btn-success' style='float:right;'>Add to Cart</button></a>
                                             </div>    
                                         </div>
+                                        
                                     </c:forEach>
                             </div>
 

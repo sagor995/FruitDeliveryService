@@ -223,16 +223,15 @@ background:#fff;
 #single_product_homepage{
 margin-top: 10px;
 float: left;
-margin-left: 30px;
+margin-left: 50px;
 margin-bottom: 30px;
-padding: 5px;
+padding: 10px;
 background: white;
 border-radius: 5px;
-border: 2px outset orange;
+border: 2px outset black;
 }
 
 #single_product_homepage img{
-
 	border: 2px solid lightgreen;
 }
 
@@ -259,7 +258,7 @@ border: 2px outset orange;
 #des{
    
         font-size: 12px;
-	color: #fff;
+	color: #000;
 	height: 20px;
 	width: 200px;
 	border: 1px ridge;
@@ -275,6 +274,7 @@ margin: auto;
 clear: both;
 }
 #cpy_text{
+    font-size: 15px;
 	line-height: 100px;
 	color: white;
 	font-family: sans-serif;
