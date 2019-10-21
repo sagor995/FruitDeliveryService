@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>FruitEats-Admin Login</title>
         <link href="../style/bootstrap.css" type="text/css" rel="stylesheet"/>
         <link href="../style/astyle.css" type="text/css" rel="stylesheet"/>
     </head>

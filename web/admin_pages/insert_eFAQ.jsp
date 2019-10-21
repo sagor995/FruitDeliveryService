@@ -1,6 +1,6 @@
 <%-- 
-    Document   : view_product
-    Created on : Oct 5, 2019, 3:15:46 PM
+    Document   : welcome
+    Created on : Sep 30, 2019, 9:49:33 AM
     Author     : SA
 --%>
 
@@ -11,13 +11,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>View Customer Data.</title>
+        <title>FriutEats-Insert Type</title>
+        
         <link href="../style/bootstrap.css" type="text/css" rel="stylesheet"/>
-        <link href="../style/astyle.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="../style/astyle.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        
-         <%
+        <%
             if (session.getAttribute("aname_s")==null) {
                     response.sendRedirect("admin_login.jsp");
                 }
@@ -28,7 +28,7 @@
 <!--            <a href="admin_panel.jsp" ><div id="head_img"></div></a>-->
 			<div id="right">
                         <center>
-                             <a href="admin_panel.jsp" class="btn btn-light"><h5 style="text-align: center;" class="btn btn-outline-danger">
+				<a href="admin_panel.jsp" class="btn btn-light"><h5 style="text-align: center;" class="btn btn-outline-danger">
                                         Manage Content</h5></a>
                                 <a href="../index.jsp" target="_blank" class="btn btn-light">View Site</a>
                                 <a href="insert_product.jsp" class="btn btn-success">Insert New Fruit</a>
@@ -41,7 +41,7 @@
                                 <a href="edit_slide_images.jsp" class="btn btn-success">Update Slides</a>
                                 <a href="update_newsfeed_message.jsp" class="btn btn-success">News Feed</a>
                                 <a href="view_customer_message.jsp" class="btn btn-success">Customer Message</a>
-                                <a href="view_reports.jsp" class="btn btn-success">View Reports</a> 
+                                <a href="view_afaq.jsp" class="btn btn-success">View F.A.Q</a> 
                                 <form method="get" action="../Logout_Admin">
                                     <input type="submit" class="btn btn-danger" value="Admin Logout" style="text-align: center;
                                         margin: 5px 5px 5px 5px;
@@ -55,31 +55,29 @@
 			</div>
 			<div id="left">
                             <img width="200px" src="../img/header.png" /><br>
-                            <h5 class="badge badge-danger">Hi!, Here is your FruitEats Report!!!</h5>
-                                        <h4 class="badge badge-dark">Check now!</h4>
+                            <h5 class="badge badge-danger">Hi!, Wanna Insert New Type!!!</h5>
+                                        <h4 class="badge badge-dark">Try Now!</h4>
                                         <h5 class="badge badge-success">Admin: ${aname_s}</h5>
-  <!--                                        <div class="table-container">
-                                      <table class="table table-hover table-active">
-                                            <thead>
-                                              <tr>
-                                                <th scope="col" id="col_id">#</th>
-                                                <th scope="col" id="col_id">Fruit Name</th>
-                                                <th scope="col" id="col_id">Fruit Image</th>
-                                                <th scope="col" id="col_id">Price</th>
-                                                <th scope="col" id="col_id">Edit</th>
-                                                <th scope="col" id="col_id">Delete</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                                
-                                            </tbody>
-                                          </table>
-                                        </div>-->
+                                        
+                                         <form action="../InserteFAQ" method="post">
+                                            <div class="form-group">
+                                              <label for="typeInput" class="badge badge-light">Question:</label>
+                                              <input type="text" class="form-control" name="faq_ques" placeholder="Enter Question." required>
+                                            </div>
+                                             <div class="form-group">
+                                              <label for="descriptionInputEmail1" class="badge badge-light">Answer</label>
+                                              <textarea class="form-control" name="faq_ans" placeholder="Enter Answer..." required></textarea>
+                                            
+                                            </div>
+                                            <button type="submit" class="btn btn-success">Insert F.A.Q</button>
+                                          </form>   
+
+
+
 			</div>
-		</div> 
-
-        
-
-          
+		</div>
+            
+            
+            
     </body>
 </html>

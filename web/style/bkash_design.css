@@ -1,0 +1,85 @@
+body {
+	margin: 0px;
+}
+
+#container{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#header{
+	width: 996px;
+	background-color: blue;
+	height: 75px;
+}
+
+#navbar{
+	width: 996px;
+	background-color: red;
+	height: 30px;
+}
+
+#main{
+	width: 996px;
+	background-color: green;
+	height: auto;
+}
+
+#bkash_container{
+	margin: auto;
+ 	background-color: grey;
+	display: table;
+	padding: 20px;
+	height: auto;
+	width: 600px;
+	background-color: #e83e8c;
+}
+
+#image{
+	margin: 0px;
+	width: 100px;
+	height: 80px;
+}
+
+#data_input{
+	margin: auto;
+	display: table;
+	padding: 15px;
+ }
+
+ .row {
+	display: table-row;
+}
+
+.labels{
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left: 10px;
+	display: table-cell;
+	text-align: left;
+}
+
+.input_field{
+	margin: 10px;
+	width: 300px;
+	height: 30px;
+	display: table-cell;
+}
+
+#submit{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#suggestions{
+	width: 996px;
+	background-color: aqua;
+	height: 300px;
+}
+
+#footer{
+	width: 996px;
+	background-color: orange;
+	height: 75px;
+}

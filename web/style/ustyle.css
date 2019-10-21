@@ -17,15 +17,30 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+#left{
+	margin-left: 10px;
+	background-repeat: no-repeat;
+	width: auto;
+	height: 100%;
+	background-image: url("img/bg3.jpg");
+	float: left;
+}
 
+#right{
+	width: 200px;
+	height:100%;
+	float: right;
+	margin-top: 5px;
+	background: white;
+}
 
 .main_wrapper{
 width: auto;
 overflow-y: hidden;
 margin: auto;
 height: auto;
-
-background-image: url("../img/bg2.jpg");
+background: white;
+/*background-image: url("../img/bg2.jpg");*/
   /* Half height */
 
   /* Center and scale the image nicely */
@@ -60,6 +75,7 @@ margin: auto;
 #header_banner{float: right;
 	height: 149px;
 	width:1000px;
+        background-image: url("../img/bg.jpg");
 }
 
 

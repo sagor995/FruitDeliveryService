@@ -62,7 +62,7 @@ ResultSet resultSet = null;
                                 <a href="edit_slide_images.jsp" class="btn btn-success">Update Slides</a>
                                 <a href="update_newsfeed_message.jsp" class="btn btn-success">News Feed</a>
                                 <a href="view_customer_message.jsp" class="btn btn-success">Customer Message</a>
-                                <a href="view_reports.jsp" class="btn btn-success">View Reports</a> 
+                               <a href="view_afaq.jsp" class="btn btn-success">View F.A.Q</a> 
                                 <form method="get" action="../Logout_Admin">
                                     <input type="submit" class="btn btn-danger" value="Admin Logout" style="text-align: center;
                                         margin: 5px 5px 5px 5px;

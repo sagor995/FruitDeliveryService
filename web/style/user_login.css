@@ -1,0 +1,130 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;}
+   
+
+
+
+/*
+#main
+{
+    width: 100%;
+    max-height: 890px;
+    background-color: #474e5d;
+    float: left;
+}
+*/
+
+
+.main-img
+    {
+        width: 100%;
+   max-height: 0px;
+    
+/*
+    background-image: url("main_img1.jpg");
+    background-color: forestgreen;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+*/
+    
+    float: left;
+    }
+    
+.mySlides {
+    
+    
+    max-width: 100%;
+    height: 650px;
+    position: inherit;
+    
+    }
+
+#close
+{
+    float: right;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+#close:hover
+{
+    color: red;
+}
+
+#sign
+{
+    width: 50%;
+    min-height: 200px;
+    padding: 10px 25%;
+    float: left;
+   
+}
+
+#form
+{
+     background-color: #fefefe;
+
+    border: 5px solid #888;
+    width: 100%; 
+    min-height: 500px;
+    padding-left: 2.59%;
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 95%;
+/*    padding: 15px;*/
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+} 
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+/*
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+*/
+
+
+
+
+
+#log-in
+{
+    width: 40%;
+    height: 50px;
+    background-color: green;
+    color: white;
+/*    float: left;*/
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+

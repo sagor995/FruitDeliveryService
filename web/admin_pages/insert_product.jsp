@@ -41,7 +41,7 @@
                                 <a href="edit_slide_images.jsp" class="btn btn-success">Update Slides</a>
                                 <a href="update_newsfeed_message.jsp" class="btn btn-success">News Feed</a>
                                 <a href="view_customer_message.jsp" class="btn btn-success">Customer Message</a>
-                                <a href="view_reports.jsp" class="btn btn-success">View Reports</a> 
+                                <a href="view_afaq.jsp" class="btn btn-success">View F.A.Q</a> 
                                 <form method="get" action="../Logout_Admin">
                                     <input type="submit" class="btn btn-danger" value="Admin Logout" style="text-align: center;
                                         margin: 5px 5px 5px 5px;
@@ -62,7 +62,7 @@
                                          <form action="../InsertData" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <label for="titleInputEmail1" class="badge badge-light">Product Title</label>
-                                              <input type="text" class="form-control" name="product_title" placeholder="Enter fruit name.">
+                                              <input type="text" class="form-control" name="product_title" placeholder="Enter fruit name." required>
                                             </div>
 
                                             <div class="form-group">
@@ -82,12 +82,12 @@
                                                     
                                             <div class="form-group">
                                                 <label for="exampleFormControlFile1" class="badge badge-light">Select a Fruit Image</label>
-                                                <input type="file" name="product_image"  class="form-control-file" id="exampleFormControlFile1">
+                                                <input type="file" name="product_image"  class="form-control-file" id="exampleFormControlFile1" required>
                                             </div>
 
                                             <div class="form-group">
                                               <label for="priceInputEmail1" class="badge badge-light">Product Price</label>
-                                              <input type="text" class="form-control" name="product_price" placeholder="Enter fruit price.">
+                                              <input type="text" class="form-control" name="product_price" placeholder="Enter fruit price." required>
                                             </div>
 
                                             <div class="form-group">
@@ -98,7 +98,7 @@
 
                                             <div class="form-group">
                                               <label for="keywordInputEmail1" class="badge badge-light">Product Keywords</label>
-                                              <input type="text" class="form-control" name="product_keyword" placeholder="Enter fruit related keywords.">
+                                              <input type="text" class="form-control" name="product_keyword" placeholder="Enter fruit related keywords." required>
                                             </div>
 
                                             <button type="submit" class="btn btn-success">Insert Data.</button>
