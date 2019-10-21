@@ -1,8 +1,8 @@
 # 
 <h3>Project Name:</h3>Fruit Delivery Service.
 <figure>
-  <img src="..." alt="Fruit Delivery Service" style="width:100%">
-  <figcaption>Fig. - Demo Pic1.</figcaption>
+  <img src="..." alt="" style="width:100%">
+  <figcaption>...</figcaption>
 </figure><br>
 
 
